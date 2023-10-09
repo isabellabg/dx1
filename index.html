@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleDx1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="javaScript.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="javaScript.png">
+    <script src="main.js"></script>
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--barra de navegação-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="javaScript.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;Dx1</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+            <li><a href="#Desafio1"  id="sec" class="cir_border">Maior palavra</a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--barra de navegação-->
+
+    <header id="home">
+        <div class="header-content">
+            <h2  id="quote">Desafio: Op. Lógicos, Op. Relacionais, Estrutura If</h2>
+            <div class="line"></div>
+            <h1 >Dx1 </h1>
+           
+            
+        </div>
+        </div>
+    </header>
+
+    <!--Dx1-->
+    <section class="NossaHistory" id="Desafio1">
+        <div class="container">
+            <div class="title">
+                <section>
+                    <h2>Desafio</h2>
+                    <p>Aldo e Jucimara gostam de jogos de palavras. Um dos jogos que eles acham mais divertido é encontrar palavras com muitas letras. Por exemplo, eles definem que o tema do desafio é nome de cidades, e os dois tentam encontrar a maior palavra que seja nome de uma cidade. Vence o desafio quem encontrar maior palavra, ou seja: a palavra com o maior número de letras.
+                        Eles pediram que você escreva um programa que, dadas as duas palavras que Aldo e Jucimara encontraram, determine qual dos dois é o vencedor.</p>
+                    <br>
+                    <div>
+                        <div>
+                            <label for="aldo">Aldo</label><br>
+                            <input type="text" id="aldo">
+                        </div>
+                        <div>
+                            <label for="jucimara">Jucimara</label><br>
+                            <input type="text" id="jucimara">
+                        </div>
+                        <button onclick="palavra()">Calcular</button>
+                    </div>
+                    <p id="resposta"></p>
+                </section>
+    </section>
+    <!--Dx1-->
+
+    <!--integrantes-->
+    <section class="NossaHistory" id="integrantes">
+        <div class="container">
+            <div class="title">
+            <h1>Integrantes:</h1>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" height="350" width="350" src="mano muito eu.jpg">
+                    <h4 class="dark">Isabella </h4>
+                    
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="Daniel.png">
+                    <h4 class="dark">Daniel</h4>
+                   
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="Samuel.png">
+                    <h4 class="dark">Samuel</h4>
+                    
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="rato.png">
+                    <h4 class="dark">Spolaor</h4>
+                </article>
+            </div>
+
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <section class="rodape">
+        <div class="social">
+           
+        </div>
+    </section>
+    
+    <!--rodapé-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <!--integrantes-->
